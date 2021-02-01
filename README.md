@@ -65,3 +65,8 @@ chsh -s $(which zsh)
 ```
 bash -c  "$(wget -qO- https://git.io/vQgMr)" 
 ```
+
+#### 8. Install fira code font
+```
+sudo pacman -S ttf-fira-code 
+```
