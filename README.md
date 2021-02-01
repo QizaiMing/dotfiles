@@ -31,15 +31,10 @@ and
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-#### 3. Configuring zsh
+#### 3. Clone this repo
 
-Modify the `~./zshrc` config file editting plugins section like this:
 ```
-plugins=(
-    git
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-)
+git clone https://github.com/QizaiMing/dotfiles.git ~/.dotfiles
 ```
 
 #### 4. Starship Theme
@@ -49,6 +44,11 @@ Install Latest Version
 With Shell:
 ```
 curl -fsSL https://starship.rs/install.sh | bash
+```
+#### 5 Create Symlinks
+```
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ls -s ~/.ditfiles/.gitconfig ~/.gitconfig
 ```
 
 #### 5. Logout/logon or apply the changes with:
@@ -61,7 +61,7 @@ source ~/.zshrc
 chsh -s $(which zsh)
 ```
 
-#### 6. Install Dracula Theme (Via Gogh)
+#### 7. Install Dracula Theme (Via Gogh)
 ```
 bash -c  "$(wget -qO- https://git.io/vQgMr)" 
 ```
